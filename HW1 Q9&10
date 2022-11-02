@@ -1,0 +1,11 @@
+Q9
+
+We would use triangular distribution since there is no data about the delay from cardiac arrest to the time an ambulance is dispatched. 
+Information that we know about this triangular distribution is the most likely time is 2.5 mins, minimal is 1.5 mins, and maximum is 3.5 mins.
+
+Q10
+
+We know that volunteers who receive alerts will be within 1 kilometer of the OHCA. With no dataset about volunteers location,
+we can set up random variable with uniform distribution from 0 to 1 represent the distance from OHCA to volunteer. Once we get the distance, 
+with the OHCA Lat & Long, it forms a cycle with radius distance. Generate a uniform number (-1,1), add that number to Lat. 
+Then use the formular of distance between points to find the Long(the result will be equal to the distance from OHCA to volunteer).  
